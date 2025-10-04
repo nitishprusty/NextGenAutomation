@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testData>
+	<config>
+		<platformName>Windows 10</platformName> <!-- For MAC: macOS 10.15, macOS 10.14  For WINDOWS: Windows 10, Windows 8.1, Windows 7-->
+		<runType>LOCAL</runType>
+		
+		<reportpath>./Data/</reportpath>
+		<username>sso-adopm-nikhil.l.singh</username>
+		<accessKey>1daddebf-0efa-418e-b02f-6261559cff3d</accessKey>
+		<url>@ondemand.us-west-1.saucelabs.com:443/wd/hub</url>
+		<chrome_browserVersion>62.0</chrome_browserVersion>
+		<edge_browserVersion>latest</edge_browserVersion>
+		<ie_browserVersion>latest</ie_browserVersion>
+		<firefox_browserVersion>latest</firefox_browserVersion>
+		<opera_browserVersion>latest</opera_browserVersion>
+		<safari_browserVersion>latest</safari_browserVersion>
+		<excelPath>./Report/</excelPath>
+	</config>
+
+	<credentials>
+		<AppURL>https://mysolutionplannernextgen.ciotest.accenture.com</AppURL>
+		<UserID1>T05364_HPSP_201@ds.dev.accenture.com</UserID1>
+		<UserID2>T05364_HPSP_202@ds.dev.accenture.com</UserID2>
+		<Password>JU0WIlhLNTEnUEkzUEBfNyEzLUk= </Password>
+
+	</credentials>
+	<OppIDs>
+		<OppID_LeadSA>0010475353</OppID_LeadSA>
+		<!-- <OppID_LeadSA>0011089872</OppID_LeadSA> --> <!-- Oppid should be common for both <UserID1> and <UserID2> -->
+	<SolID_LeadSA>292</SolID_LeadSA> <!-- solution id of <OppID_LeadSA_MobSME> for RUM related scenarios -->
+		<OppID_LeadSA_MobSME>0010475353</OppID_LeadSA_MobSME>
+		<SolID>4590</SolID> <!-- solution id of <OppID_LeadSA_MobSME> for RUM related scenarios -->
+		<OppID_Non_LeadSA_SupportingSA>0010904859</OppID_Non_LeadSA_SupportingSA> <!-- Oppid should not have LeadSA and Supporting SA access for <UserID2> 
+			but should have access for <UserID1> -->
+		<OppID_Interim>D-AVA-8000000738</OppID_Interim> <!-- Oppid with Digital PMO access -->
+		<OppID_DigitalPMO>0011181418</OppID_DigitalPMO> <!-- Oppid with Digital PMO access -->
+		 <!--<OppID_CDATPMO>0011451971</OppID_CDATPMO> Oppid with CDAT PMO access -->
+		<OppID_CDATPMO>0011661440</OppID_CDATPMO> <!-- Oppid with CDAT PMO access -->
+		<OppId_HnPS_NARegion>0011206931</OppId_HnPS_NARegion> <!-- Opp id for H&PS NA region for CST xml (Get it from Super user search) -->
+		<OppId_LATUM>0011206952</OppId_LATUM> <!-- Opp id for LATIN AMERICA region for CST xml (Get it from Super user 
+			search) -->
+		<OppId_GreaterChina>0011089296</OppId_GreaterChina> <!-- Opp id for LATIN AMERICA region for CST xml (Get it from Super user 
+			search) -->
+		<OppId_Japan>0011089296</OppId_Japan> <!-- Opp id for LATIN AMERICA region for CST xml (Get it from Super user 
+			search) -->
+		<OppID_InteractivePMO>0011182890</OppID_InteractivePMO>
+		<OppId_PDCBLANK>0011495069</OppId_PDCBLANK>  <!-- Opp Id having PDC Field as BLANK in Opp Details Page -->
+		<OppID_DataAI>0011247246</OppID_DataAI>
+		<OppID_AO_PDC_Blank>0011633515</OppID_AO_PDC_Blank> <!-- Opp Id should have PDC field empty for Reviewer/Approver XML -->
+		<OppID_SI_PDC_Blank>0011633572</OppID_SI_PDC_Blank><!-- Opp Id should have PDC field empty for Reviewer/Approver XML -->
+		<OppID_AO_SI_PDCBlank>0011578941</OppID_AO_SI_PDCBlank><!-- Opp Id should have PDC field empty for Reviewer/Approver XML -->
+		<OppID_RBE1_IndustryGTM>0011298762</OppID_RBE1_IndustryGTM>
+		<OppID_RBE2_IndustryGTM>0011248133</OppID_RBE2_IndustryGTM>
+		<OppID_Closed_IndustryGTM>0011088049</OppID_Closed_IndustryGTM>
+		<OppID_AO_OnHold>0011275340</OppID_AO_OnHold>
+		<OppID_TargetUser_AO_ManageVersion_AppRejRequest>0011157693</OppID_TargetUser_AO_ManageVersion_AppRejRequest> <!-- Opp Id for Target user should not be present in Source user for sending the request from Copy from other Opp -->
+		<OppID_SourceUser_AO_ManageVersion_AppRejRequest>0010976639</OppID_SourceUser_AO_ManageVersion_AppRejRequest><!-- Opp Id for Source user should not be present in Target user for approving/rejecting the request from Copy from other Opp -->
+		<OppID_Interim_DirAvan>D-AVA-8000001012</OppID_Interim_DirAvan>
+		<OppID_Interim_IndAvan>I-AVA-8000001013</OppID_Interim_IndAvan>
+		<OppID_Interim_Inter>INTER-8000001036</OppID_Interim_Inter>
+		<OppID_InterimTech>TECH-8000001020</OppID_InterimTech>
+		<OppID_Interim_DataAI>DATA-AI-8000001206</OppID_Interim_DataAI>
+		<OppID_Request_Pricing>0011359720</OppID_Request_Pricing><!-- Opp Id should have AO,IO components and SI disabled, Request Pricing should also work -->
+		<OppID_AO_SI_IO>0011396013</OppID_AO_SI_IO><!-- Opp Id should have AO,IO and SI component -->
+		<OppID_VBD>0011157693</OppID_VBD><!-- Opp Id Greaterthan 20million USD -->
+		<OppID_Differentiation>0010475353</OppID_Differentiation>
+		<OppID_Differentiation_5million>0011637167</OppID_Differentiation_5million><!-- Opp Id revenue should be Greater than or Equal to 5 million -->
+		
+		
+		
+       	<OppID_KDA_Variance>0011637167</OppID_KDA_Variance>
+		<!-- <OppID_KDA_Variance>0011431840</OppID_KDA_Variance> -->  <!-- Opp Id should be eligible for Productivity Adherence. -->
+		<OppID_Productivity>0011431840</OppID_Productivity><!-- Opp Id should be eligible for Productivity Assessment where deal size should be greater than 2 years. -->
+		<OppID_Performance_OppID>0011224309</OppID_Performance_OppID>
+		<OppID_Performance_Complex>62.00</OppID_Performance_Complex>
+		<OppID_Non_US_Currency>0011627780</OppID_Non_US_Currency><!-- Opp Id currency should not be USD -->
+		<OppID_Differentiation_Exemption>0011549019</OppID_Differentiation_Exemption><!-- Differentiation Exemption Initiation Eligible Deal -->
+		<OppID_Europe_Market>9990000003</OppID_Europe_Market> <!--Market unit is Europe-->
+		<OppID_Growth_Market>0011451971</OppID_Growth_Market><!--Market unit is Growth-->
+	</OppIDs>
+
+	<roles>
+		<SupportingSA>Supporting SA</SupportingSA> <!-- for oppid from OppID_LeadSA tag -->
+		<PMO>Market PMO</PMO> <!-- Any PMO Role (Ex. CDAT PMO/Digital PMO etc. which has access to Interim 
+			oppid mentioned in <OppID_Interim> subtag from above <OppIDs> tag) for Regression_ExecutiveDashboard.xml -->
+		<SuperUser>Super User</SuperUser>
+		<LeadSA>Lead SA</LeadSA>
+		<MOBSME>Mobilisation SME</MOBSME>
+		<CDAT>CDAT SME</CDAT>
+		<AvanadePMO>Avanade PMO</AvanadePMO>
+		<PCATpmo>PCAT PMO</PCATpmo>
+		<PCATLead>PCAT Lead</PCATLead>
+		<!-- For Regression Reviewer_Approver xml user roles -->
+		<DCSOReviewer>DCSO Reviewer</DCSOReviewer>
+		<GlobalDeliveryApprover>Global Delivery Approver
+		</GlobalDeliveryApprover>
+		<CentralPMOLead>Central PMO Lead</CentralPMOLead>
+		<IndustryGTM>Industry GTM</IndustryGTM>
+		<MarketBusinessTech>Market Business Technology Advisor
+		</MarketBusinessTech>
+		<IndustryInnovationPartner>Industry Innovation Partner
+		</IndustryInnovationPartner>
+		<LivingSystemsSA>Living System SA</LivingSystemsSA>
+		<Data-AI_PMO>Data-AI PMO</Data-AI_PMO>
+		<Data-AI_Lead>Data-AI Lead</Data-AI_Lead>
+		<IndustrySA>Industry SA</IndustrySA>
+		<!-- ************************************************ -->
+		<IndustrySAPMO>Industry SA PMO</IndustrySAPMO>
+		<IndustrySALead>Industry SA Lead</IndustrySALead>
+		<MUSalesTechLead>MU Sales Tech Lead</MUSalesTechLead>
+		<MUSalesTSALead>MU Sales TS&#38;A Lead</MUSalesTSALead>
+		<CG_PMO>CG PMO</CG_PMO>
+		<SongPMO>Song PMO</SongPMO>
+		<CDATpmo>CDAT PMO</CDATpmo>
+		<DevOpsPMO>DevOps PMO</DevOpsPMO>
+		<OperationUser>Operation User</OperationUser>
+		<SuperUSer>Super User</SuperUSer>
+	</roles>
+</testData>
+ 

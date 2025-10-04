@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testData>  
+	<config>
+		<platformName>Windows 10</platformName>
+		<runType>LOCAL</runType>
+		
+		<reportpath>./Data/</reportpath>
+		<username>sso-adopm-nikhil.l.singh</username>
+		<accessKey>1daddebf-0efa-418e-b02f-6261559cff3d</accessKey>
+		<url>@ondemand.us-west-1.saucelabs.com:443/wd/hub</url>
+		<chrome_browserVersion>latest</chrome_browserVersion>
+		<edge_browserVersion>latest</edge_browserVersion>
+		<ie_browserVersion>latest</ie_browserVersion>
+		<firefox_browserVersion>latest</firefox_browserVersion>
+		<opera_browserVersion>latest</opera_browserVersion>
+		<safari_browserVersion>latest</safari_browserVersion>
+		<excelPath>./Report/</excelPath>
+	</config>
+	<credentials>
+   		<AppURL>https://mysolutionplannernextgencore.ciostage.accenture.com/MySP/SolutionConfiguration/18847/139014/17/AMSPricingInput</AppURL>
+		<UserID1>T05364_HPSP_201@ds.dev.accenture.com</UserID1>
+		<UserID2>T05364_HPSP_202@ds.dev.accenture.com</UserID2>
+		<Password>JU0WIlhLNTEnUEkzUEBfNyEzLUk= </Password> 
+	</credentials>
+   	<OppIDs>  	
+ 		<OppID_Productivity>0011525021</OppID_Productivity>
+ 		<OppID_WAWS>0011523313</OppID_WAWS><!-- Newly created MMSID without WAWS configured is required everytime  -->
+        <OppID_LastActivity>0011526565</OppID_LastActivity>
+        <OppID_Interim_Link>0011526565</OppID_Interim_Link> <!-- MMSID to link with interim deal -->
+        
+		<OppID_LeadSA>0011582456</OppID_LeadSA> <!-- Oppid should be common for both <UserID1> and <UserID2>-->
+		<OppID_LeadSA_MobSME>0011088212</OppID_LeadSA_MobSME>
+		<SolID>10059</SolID> <!-- solution id of <OppID_LeadSA_MobSME> for RUM related scenarios-->
+		<OppID_Non_LeadSA_SupportingSA>0011088049</OppID_Non_LeadSA_SupportingSA> <!-- Oppid should not have LeadSA and Supporting SA access for <UserID2> but should have access for <UserID1>-->
+		<OppID_Interim>D-AVA-8000000375</OppID_Interim> <!-- Oppid with Digital PMO access -->
+		<OppID_DigitalPMO>0010755069</OppID_DigitalPMO> <!-- Oppid with Digital PMO access -->
+		<OppID_CDATPMO>0011088212</OppID_CDATPMO> <!-- Oppid with Digital PMO access -->
+		<OppId_HnPS_NARegion>0011167622</OppId_HnPS_NARegion> <!-- Opp id for H&PS NA region for CST xml (Get it from Super user search)-->
+		<OppId_LATUM>0011089296</OppId_LATUM> <!-- Opp id for LATIN AMERICA region for CST xml (Get it from Super user search) -->
+ 		<OppId_GreaterChina>0011089296</OppId_GreaterChina> <!-- Opp id for LATIN AMERICA region for CST xml (Get it from Super user search) -->
+		<OppId_Japan>0011089296</OppId_Japan> <!-- Opp id for LATIN AMERICA region for CST xml (Get it from Super user search) -->
+ 		<OppID_InteractivePMO>0011169990</OppID_InteractivePMO>
+ 		<OppId_PDCBLANK>0011246823</OppId_PDCBLANK> <!-- Opp Id having PDC Field as BLANK in Opp Details Page -->
+ 		<OppID_DataAI>0011247246</OppID_DataAI>
+ 		<OppID_AO_PDC_Blank>0011583054</OppID_AO_PDC_Blank> <!-- Opp Id should have PDC field empty for Reviewer/Approver XML -->
+ 		<OppID_SI_PDC_Blank>0011248315</OppID_SI_PDC_Blank><!-- Opp Id should have PDC field empty for Reviewer/Approver XML -->
+ 		<OppID_AO_SI_PDCBlank>0011247246</OppID_AO_SI_PDCBlank><!-- Opp Id should have PDC field empty for Reviewer/Approver XML -->
+ 		<OppID_AO_OnHold>0011014998</OppID_AO_OnHold>
+ 		<OppID_RBE1_IndustryGTM>0011247823</OppID_RBE1_IndustryGTM>
+ 		<OppID_RBE2_IndustryGTM>0011248133</OppID_RBE2_IndustryGTM>
+ 		<OppID_Closed_IndustryGTM>0011088049</OppID_Closed_IndustryGTM>
+ 		<OppID_TechInterim>TECH-8000000946</OppID_TechInterim>
+ 		<OppID_TargetUser_AO_ManageVersion_AppRejRequest>0010755069</OppID_TargetUser_AO_ManageVersion_AppRejRequest> <!-- Opp Id for Target user should not be present in Source user for sending the request from Copy from other Opp -->
+		<OppID_SourceUser_AO_ManageVersion_AppRejRequest>0010678050</OppID_SourceUser_AO_ManageVersion_AppRejRequest><!-- Opp Id for Source user should not be present in Target user for approving/rejecting the request from Copy from other Opp -->
+		<OppID_Interim_DirAvan>D-AVA-8000001504</OppID_Interim_DirAvan>
+		<OppID_Interim_IndAvan>I-AVA-8000001486</OppID_Interim_IndAvan>
+		<OppID_Interim_Inter>INTER-8000001514</OppID_Interim_Inter>
+		<OppID_InterimTech>TECH-8000001020</OppID_InterimTech>
+		<OppID_Interim_DataAI>DATA-AI-8000001515</OppID_Interim_DataAI>
+		<OppID_Request_Pricing>0011317359</OppID_Request_Pricing><!-- Opp Id should have AO,IO components and SI disabled, Request Pricing should also work -->
+		<OppID_AO_SI_IO>0011358643</OppID_AO_SI_IO><!-- Opp Id should have AO,IO and SI component -->
+		<OppID_PMO_Charter>0011088212</OppID_PMO_Charter>
+		<OppID_Differentiation>0011317359</OppID_Differentiation>
+		<OppID_Differentiation_5million>0011502168</OppID_Differentiation_5million><!-- Opp Id revenue should be Greater than or Equal to 5 million -->
+	    <OppID_Differentiation_10million>0011526565</OppID_Differentiation_10million><!-- Opp Id revenue should be Greater than or Equal to 10 million -->
+		<OppID_KDA_Variance>0011502168</OppID_KDA_Variance><!-- Opp Id should be eligible for Productivity Adherence. -->
+		<OppID_Productivity>0011502168</OppID_Productivity><!-- Opp Id should be eligible for Productivity Assessment where deal size should be greater than 2 years. -->
+		<OppID_Non_US_Currency>0011583709</OppID_Non_US_Currency><!-- Opp Id currency should not be USD -->
+ 	    <OppID_Differentiation_Exemption>0011525021</OppID_Differentiation_Exemption><!-- Differentiation Exemption Initiation Eligible Deal -->
+ 	    <OppID_Performance_OppID>0011088212</OppID_Performance_OppID>
+		<OppID_Performance_Simple>6231.00</OppID_Performance_Simple>
+		<OppID_Performance_Medium>6231.00</OppID_Performance_Medium>
+ 	    <OppID_Performance_Complex>6231.00</OppID_Performance_Complex> 	    
+ 	    <OppID_Europe_Market>0011525021</OppID_Europe_Market> <!--Market unit is Europe-->
+		<OppID_Growth_Market>0011583709</OppID_Growth_Market><!--Market unit is Growth-->
+ 	</OppIDs> 
+ 	
+ 	<roles>
+ 		<SupportingSA>Supporting SA</SupportingSA> <!-- for oppid from OppID_LeadSA tag -->
+ 	    <PMO>Market PMO</PMO> <!-- Any PMO Role (Ex. CDAT PMO/Digital PMO etc. which has access to Interim oppid mentioned in <OppID_Interim> subtag from above <OppIDs> tag) for Regression_ExecutiveDashboard.xml -->
+ 		<SuperUser>Super User</SuperUser>
+ 		<LeadSA>Lead SA</LeadSA>
+ 		<MOBSME>Mobilisation SME</MOBSME>
+ 		<CDAT>CDAT SME</CDAT>
+ 		<AvanadePMO>Avanade PMO</AvanadePMO>
+ 		<PCATpmo>PCAT PMO</PCATpmo>
+ 		<PCATLead>PCAT Lead</PCATLead>
+	<!--  For Regression Reviewer_Approver xml user roles  -->
+ 		<DCSOReviewer>DCSO Reviewer</DCSOReviewer> 
+ 		<GlobalDeliveryApprover>Global Delivery Approver</GlobalDeliveryApprover>
+ 		<CentralPMOLead>Central PMO Lead</CentralPMOLead>
+ 		<IndustryGTM>Industry GTM</IndustryGTM>
+ 		<MarketBusinessTech>Market Business Technology Advisor</MarketBusinessTech>
+ 		<IndustryInnovationPartner>Industry Innovation Partner</IndustryInnovationPartner>
+ 		<LivingSystemsSA>Living System SA</LivingSystemsSA>
+ 		<Data-AI_PMO>Data-AI PMO</Data-AI_PMO>
+ 		<Data-AI_Lead>Data-AI Lead</Data-AI_Lead>
+ 		<OperationUser>Operation User</OperationUser>
+ 		<IndustrySAPMO>Industry SA PMO</IndustrySAPMO>
+		<IndustrySA>Industry SA</IndustrySA>
+		<IndustrySALead>Industry SA Lead</IndustrySALead>
+		<MUSalesTechLead>MU Sales Tech Lead</MUSalesTechLead>
+		<MUSalesTSALead>MU Sales TS&#38;A Lead</MUSalesTSALead>
+		<DevOpsPMO>DevOps PMO</DevOpsPMO>
+		<SongPMO>Song PMO</SongPMO>
+		<CDATpmo>CDAT PMO</CDATpmo>
+<!-- ************************************************ -->
+ 	</roles>
+ </testData>
+ 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testData>   
+
+	<config>
+		<platformName>Windows 10</platformName>
+		<runType>SAUCE</runType>
+		
+		<reportpath>./Data/</reportpath>
+		<username>sso-adopm-nikhil.l.singh</username>
+		<accessKey>1daddebf-0efa-418e-b02f-6261559cff3d</accessKey>
+		<url>@ondemand.us-west-1.saucelabs.com:443/wd/hub</url>
+		<chrome_browserVersion>latest</chrome_browserVersion>
+		<edge_browserVersion>latest</edge_browserVersion>
+		<ie_browserVersion>latest</ie_browserVersion>
+		<firefox_browserVersion>latest</firefox_browserVersion>
+		<opera_browserVersion>latest</opera_browserVersion>
+		<safari_browserVersion>latest</safari_browserVersion>
+		<excelPath>./Report/</excelPath>
+	</config>
+	
+	<credentials>
+   		<AppURL>https://mysolutionplannernextgen.accenture.com/</AppURL>
+		<UserID1>T05364_HPSP_201@ds.dev.accenture.com</UserID1>
+		<UserID2>T05364_HPSP_202@ds.dev.accenture.com</UserID2>
+		<Password>JU0WIlhLNTEnUEkzUEBfNyEzLUk= </Password> 
+	</credentials>
+	
+ </testData>
+ 
